@@ -1,6 +1,6 @@
 # cui_aider
 
-A new Flutter project.
+
 
 ## Getting Started
 
