@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "158369241945",
+    "project_id": "cui-aider",
+    "storage_bucket": "cui-aider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158369241945:android:d1af6735736e4ddedb8a48",
+        "android_client_info": {
+          "package_name": "com.comsats.aider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158369241945-3brfdf58c3vq1iplcu1g8750escjmucb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhi6qZ_qszWq9DyDTiBdjKe8nn3ssz-bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158369241945-3brfdf58c3vq1iplcu1g8750escjmucb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
