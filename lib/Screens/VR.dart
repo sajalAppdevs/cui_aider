@@ -1,6 +1,8 @@
 import 'dart:io';
 
+import 'package:cui_aider/Screens/VRs/Ground.dart';
 import 'package:cui_aider/Screens/VRs/admin.dart';
+import 'package:cui_aider/Screens/VRs/streight.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:panorama/panorama.dart';
@@ -27,26 +29,18 @@ class _VRState extends State<VR> {
         child: Panorama(
           child:Image.file(File("/storage/emulated/0/Android/data/com.comsats.aider/files/innergate.jpeg")),
           onTap: (longitude, latitude, tilt)async {
-            print(longitude);
-            print(latitude);
-            print(tilt);
-
             if(longitude<18.0 && longitude>-2.0 && latitude<2 && latitude>-18 && tilt>-3 &&tilt<17)
               {
-                print("Woring");
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Streight(),));
               }
             if(longitude<-44 && longitude>-66 && latitude<-2 && latitude>-22 && tilt>30 &&tilt<50)
             {
-              print("Woring");
-              // var status = await Permission.storage.status;
-              // if (status.isDenied) {
-              //   Map<Permission, PermissionStatus> statuses = await [
-              //     Permission.location,
-              //     Permission.storage,
-              //   ].request();
-              //   print(statuses[Permission.location]);
-              // }
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Admin(),));
+            }
+            if(longitude<102 && longitude>80 && latitude<-1 && latitude>-25 && tilt>-15 &&tilt<10)
+            {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Ground(),));
+
             }
           },
         ),
